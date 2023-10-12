@@ -16,6 +16,7 @@ resource "azurerm_storage_account" "stracctstaticsite" {
   }
 }
  
+ 
 resource "azurerm_storage_blob" "index" {
   name                   = "index.html"
   storage_account_name   = azurerm_storage_account.stracctstaticsite.name
